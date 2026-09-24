@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NeetCode 1v1v1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=JetBrains+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="home">
+      <div class="home-card">
+        <h1>NeetCode<span class="v">first to pass every test wins</span></h1>
+        <div class="home-lanes" aria-hidden="true"><span></span><span></span><span></span></div>
+
+        <div class="field">
+          <label for="name">Your name</label>
+          <input id="name" type="text" maxlength="20" autocomplete="nickname" />
+        </div>
+
+        <div class="home-actions">
+          <button id="create" class="primary">Create a room</button>
+          <div class="divider-text">or join one</div>
+          <form id="join-form" class="join-row">
+            <input id="join-code" type="text" maxlength="4" placeholder="Room code" aria-label="Room code" autocomplete="off" />
+            <button type="submit">Join</button>
+          </form>
+          <p id="home-error" class="error-text" role="alert"></p>
+        </div>
+      </div>
+    </main>
+    <script src="/static/home.js"></script>
+  </body>
+</html>
